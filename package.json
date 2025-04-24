@@ -1,35 +1,47 @@
 {
-  "name": "vite-plugin-cloudflare-workers-env-shims",
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "build": "tsdown --dts --unused --publint ./index.ts",
-    "typecheck": "tsc --noEmit",
-    "release": "bumpp",
-    "prepack": "bun run build"
-  },
-  "exports": {
-    ".": {
-      "bun": "./index.ts",
-      "default": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
-  },
-  "files": [
-    "dist",
-    "index.ts"
-  ],
-  "devDependencies": {
-    "bumpp": "^10.1.0",
-    "publint": "^0.3.12",
-    "tsdown": "^0.9.6",
-    "typescript": "^5",
-    "unplugin-unused": "^0.4.4"
-  },
-  "peerDependencies": {
-    "vite": "^6.3.3"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "vite-plugin-cloudflare-workers-env-shims",
+	"version": "0.0.0",
+	"author": "ryoppippi",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"build": "tsdown --dts --unused --publint ./index.ts",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check .",
+		"format": "biome check --write .",
+		"release": "bumpp",
+		"prepack": "bun run build",
+		"prepare": "simple-git-hooks"
+	},
+	"exports": {
+		".": {
+			"bun": "./index.ts",
+			"default": "./dist/index.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"files": ["dist", "index.ts"],
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"bumpp": "^10.1.0",
+		"lint-staged": "^15.5.1",
+		"publint": "^0.3.12",
+		"simple-git-hooks": "^2.13.0",
+		"tsdown": "^0.9.6",
+		"typescript": "^5",
+		"unplugin-unused": "^0.4.4"
+	},
+	"peerDependencies": {
+		"vite": "^6.3.3"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "bun lint-staged"
+	},
+	"lint-staged": {
+		"*": ["biome check --write --no-errors-on-unmatched "]
+	},
+	"trustedDependencies": ["@biomejs/biome", "simple-git-hooks"]
 }

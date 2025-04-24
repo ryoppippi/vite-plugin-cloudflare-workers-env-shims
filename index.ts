@@ -1,11 +1,11 @@
-import type { Plugin } from 'vite';
+import type { Plugin } from "vite";
 
 export default function cloudflareWorkersDevEnvironmentShim(): Plugin {
-	const ID = 'cloudflare:workers';
+	const ID = "cloudflare:workers";
 	return {
-		name: 'cloudflare-workers-dev-shim',
-		apply: 'serve', // dev‑only
-		enforce: 'pre',
+		name: "cloudflare-workers-dev-shim",
+		apply: "serve", // dev‑only
+		enforce: "pre",
 		resolveId(id: string) {
 			if (id === ID) {
 				return id;
