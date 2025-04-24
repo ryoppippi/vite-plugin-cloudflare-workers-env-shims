@@ -1,9 +1,11 @@
 {
 	"name": "vite-plugin-cloudflare-workers-env-shims",
+	"description": "A Vite plugin that provides shims for Cloudflare Workers environment variables.",
+	"type": "module",
+	"repository": "https://github.com/ryoppippi/vite-plugin-cloudflare-workers-env-shims",
 	"version": "0.1.1",
 	"author": "ryoppippi",
 	"license": "MIT",
-	"type": "module",
 	"scripts": {
 		"build": "tsdown --dts --unused --publint ./index.ts",
 		"typecheck": "tsc --noEmit",
