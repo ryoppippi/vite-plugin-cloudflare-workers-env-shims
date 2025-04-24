@@ -9,7 +9,7 @@
 		"typecheck": "tsc --noEmit",
 		"lint": "biome check .",
 		"format": "biome check --write .",
-		"release": "bumpp",
+		"release": "nr lint && nr typecheck && bumpp && npm publish",
 		"prepack": "bun run build",
 		"prepare": "simple-git-hooks"
 	},
@@ -22,6 +22,7 @@
 	},
 	"files": ["dist", "index.ts"],
 	"devDependencies": {
+		"@antfu/ni": "^24.3.0",
 		"@biomejs/biome": "^1.9.4",
 		"bumpp": "^10.1.0",
 		"lint-staged": "^15.5.1",
