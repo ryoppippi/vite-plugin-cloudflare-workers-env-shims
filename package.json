@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsdown --dts --unused --publint ./index.ts"
+    "build": "tsdown --dts --unused --publint ./index.ts",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp",
+    "prepack": "bun run build"
   },
   "exports": {
     ".": {
@@ -17,6 +20,7 @@
     "index.ts"
   ],
   "devDependencies": {
+    "bumpp": "^10.1.0",
     "publint": "^0.3.12",
     "tsdown": "^0.9.6",
     "typescript": "^5",
@@ -24,5 +28,8 @@
   },
   "peerDependencies": {
     "vite": "^6.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
