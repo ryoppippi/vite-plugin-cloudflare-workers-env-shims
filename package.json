@@ -1,0 +1,12 @@
+{
+  "name": "vite-plugin-cloudflare-workers-import-shims",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "vite": "^6.3.3"
+  }
+}
