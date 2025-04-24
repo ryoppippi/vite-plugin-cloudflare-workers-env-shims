@@ -9,8 +9,7 @@
 		"typecheck": "tsc --noEmit",
 		"lint": "biome check .",
 		"format": "biome check --write .",
-		"release": "nr lint && nr typecheck && bumpp && npm publish",
-		"prepack": "bun run build",
+		"release": "nr lint && nr typecheck && nr build && bumpp && npm publish",
 		"prepare": "simple-git-hooks"
 	},
 	"exports": {
