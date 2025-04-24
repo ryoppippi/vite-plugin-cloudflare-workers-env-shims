@@ -1,10 +1,26 @@
 {
   "name": "vite-plugin-cloudflare-workers-import-shims",
-  "module": "index.ts",
+  "version": "0.0.0",
   "type": "module",
-  "private": true,
+  "scripts": {
+    "build": "tsdown --dts --unused --publint ./index.ts"
+  },
+  "exports": {
+    ".": {
+      "bun": "./index.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "index.ts"
+  ],
   "devDependencies": {
-    "typescript": "^5"
+    "publint": "^0.3.12",
+    "tsdown": "^0.9.6",
+    "typescript": "^5",
+    "unplugin-unused": "^0.4.4"
   },
   "peerDependencies": {
     "vite": "^6.3.3"
