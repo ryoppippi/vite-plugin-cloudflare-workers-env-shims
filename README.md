@@ -25,9 +25,7 @@ import cloudflareWorkersEnvShims from 'vite-plugin-cloudflare-workers-env-shims'
 
 export default defineConfig({
   plugins: [
-    cloudflareWorkersEnvShims({
-      // options
-    }),
+    cloudflareWorkersEnvShims(),
   ],
 })
 ```
