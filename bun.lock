@@ -15,7 +15,7 @@
         "unplugin-unused": "^0.5.2",
       },
       "peerDependencies": {
-        "vite": "^6.3.5",
+        "vite": "^7.1.4",
       },
     },
   },
