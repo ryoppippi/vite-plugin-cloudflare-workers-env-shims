@@ -30,7 +30,7 @@
 		"lint-staged": "^16.1.6",
 		"publint": "^0.3.13",
 		"simple-git-hooks": "^2.13.1",
-		"tsdown": "^0.15.1",
+		"tsdown": "^0.15.3",
 		"typescript": "^5.9.2",
 		"unplugin-unused": "^0.5.3"
 	},
