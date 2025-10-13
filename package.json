@@ -28,7 +28,7 @@
 		"@biomejs/biome": "^1.9.4",
 		"bumpp": "^10.2.3",
 		"lint-staged": "^16.2.3",
-		"publint": "^0.3.13",
+		"publint": "^0.3.14",
 		"simple-git-hooks": "^2.13.1",
 		"tsdown": "^0.15.6",
 		"typescript": "^5.9.3",
