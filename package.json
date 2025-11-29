@@ -25,7 +25,7 @@
 	"files": ["dist", "index.ts"],
 	"devDependencies": {
 		"@antfu/ni": "^27.0.1",
-		"@biomejs/biome": "^1.9.4",
+		"@biomejs/biome": "^2.3.8",
 		"bumpp": "^10.3.1",
 		"lint-staged": "^16.2.7",
 		"publint": "^0.3.15",
