@@ -8,7 +8,7 @@
         "@antfu/ni": "^29.0.0",
         "@biomejs/biome": "^1.9.4",
         "bumpp": "^10.4.1",
-        "lint-staged": "^16.3.3",
+        "lint-staged": "^16.4.0",
         "publint": "^0.3.18",
         "simple-git-hooks": "^2.13.1",
         "tsdown": "^0.21.2",
