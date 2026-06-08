@@ -35,7 +35,7 @@
 		"unplugin-unused": "^0.5.7"
 	},
 	"peerDependencies": {
-		"vite": "^8.0.14"
+		"vite": "^8.0.16"
 	},
 	"publishConfig": {
 		"access": "public"
