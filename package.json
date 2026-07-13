@@ -31,7 +31,7 @@
 		"publint": "^0.3.21",
 		"simple-git-hooks": "^2.13.1",
 		"tsdown": "^0.22.4",
-		"typescript": "^6.0.3",
+		"typescript": "^7.0.2",
 		"unplugin-unused": "^0.5.7"
 	},
 	"peerDependencies": {
