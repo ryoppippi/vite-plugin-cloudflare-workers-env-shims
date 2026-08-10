@@ -5,7 +5,7 @@
     "": {
       "name": "vite-plugin-cloudflare-workers-env-shims",
       "devDependencies": {
-        "@antfu/ni": "^30.3.0",
+        "@antfu/ni": "^30.5.0",
         "@biomejs/biome": "^1.9.4",
         "bumpp": "^12.1.1",
         "lint-staged": "^17.3.0",
@@ -25,7 +25,7 @@
     "simple-git-hooks",
   ],
   "packages": {
-    "@antfu/ni": ["@antfu/ni@30.3.0", "", { "dependencies": { "fzf": "^0.5.2", "package-manager-detector": "^1.7.0", "tinyexec": "^1.2.4", "tinyglobby": "^0.2.17" }, "bin": { "ni": "bin/ni.mjs", "nci": "bin/nci.mjs", "nr": "bin/nr.mjs", "nup": "bin/nup.mjs", "nd": "bin/nd.mjs", "nlx": "bin/nlx.mjs", "na": "bin/na.mjs", "nun": "bin/nun.mjs" } }, "sha512-KkYFVPA1IvC3m+WBKUuY5oxYc4OdXr83jvnlOn8a+bJM10yQMu+slFN/1pDzAw2JZVi+FYP9IYjo4KaPIccMmA=="],
+    "@antfu/ni": ["@antfu/ni@30.5.0", "", { "dependencies": { "fzf": "^0.5.2", "package-manager-detector": "^1.8.0", "tinyexec": "^1.3.0", "tinyglobby": "^0.2.17" }, "bin": { "na": "bin/na.mjs", "nd": "bin/nd.mjs", "ni": "bin/ni.mjs", "nr": "bin/nr.mjs", "nci": "bin/nci.mjs", "nlx": "bin/nlx.mjs", "nun": "bin/nun.mjs", "nup": "bin/nup.mjs" } }, "sha512-VwQoM9qF1dzDrye55b1qIBeLr4zQ1a5wZQMPCe496HTiquViBZqxtNBaq98WX3ze5kC9Yl7gKSU4W2vtLztxYw=="],
 
     "@biomejs/biome": ["@biomejs/biome@1.9.4", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "1.9.4", "@biomejs/cli-darwin-x64": "1.9.4", "@biomejs/cli-linux-arm64": "1.9.4", "@biomejs/cli-linux-arm64-musl": "1.9.4", "@biomejs/cli-linux-x64": "1.9.4", "@biomejs/cli-linux-x64-musl": "1.9.4", "@biomejs/cli-win32-arm64": "1.9.4", "@biomejs/cli-win32-x64": "1.9.4" }, "bin": { "biome": "bin/biome" } }, "sha512-1rkd7G70+o9KkTn5KLmDYXihGoTaIGO9PIIN2ZB7UJxFrWw04CZHPYiMRjYsaDvVV7hP1dYNRLxSANLaBFGpog=="],
 
@@ -359,7 +359,7 @@
 
     "string-argv": ["string-argv@0.3.2", "", {}, "sha512-aqD2Q0144Z+/RqG52NeHEkZauTAUWJO8c6yTftGJKO3Tja5tUgIfmIl6kExvhtxSDP7fXB6DvzkfMpCd/F3G+Q=="],
 
-    "tinyexec": ["tinyexec@1.2.4", "", {}, "sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg=="],
+    "tinyexec": ["tinyexec@1.3.0", "", {}, "sha512-QKAl9m8gWWGHV8jZcPeym6j+XULi6tOf1mT83WYJ4Lk2ytW/uwAWkrP0uFsdoYMdueVJ0qs26wZ+23xeB4ibNQ=="],
 
     "tinyglobby": ["tinyglobby@0.2.17", "", { "dependencies": { "fdir": "^6.5.0", "picomatch": "^4.0.4" } }, "sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g=="],
 
@@ -393,7 +393,15 @@
 
     "yuku-parser": ["yuku-parser@0.8.0", "", { "dependencies": { "@yuku-toolchain/types": "^0.8.0", "yuku-ast": "^0.8.0" }, "optionalDependencies": { "@yuku-parser/binding-darwin-arm64": "0.8.0", "@yuku-parser/binding-darwin-x64": "0.8.0", "@yuku-parser/binding-freebsd-x64": "0.8.0", "@yuku-parser/binding-linux-arm-gnu": "0.8.0", "@yuku-parser/binding-linux-arm-musl": "0.8.0", "@yuku-parser/binding-linux-arm64-gnu": "0.8.0", "@yuku-parser/binding-linux-arm64-musl": "0.8.0", "@yuku-parser/binding-linux-x64-gnu": "0.8.0", "@yuku-parser/binding-linux-x64-musl": "0.8.0", "@yuku-parser/binding-win32-arm64": "0.8.0", "@yuku-parser/binding-win32-x64": "0.8.0" } }, "sha512-obrazyE8Cyh79xTQS9wv44khnhvkXG1CDSSy0bg+Pjjla+iXkKXK2b6+LTYXSN3qvVfQxc0MN5qhNKYr9sl3Zw=="],
 
+    "@publint/pack/tinyexec": ["tinyexec@1.2.4", "", {}, "sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg=="],
+
+    "bumpp/tinyexec": ["tinyexec@1.2.4", "", {}, "sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg=="],
+
+    "lint-staged/tinyexec": ["tinyexec@1.2.4", "", {}, "sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg=="],
+
     "tinyglobby/picomatch": ["picomatch@4.0.4", "", {}, "sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A=="],
+
+    "tsdown/tinyexec": ["tinyexec@1.2.4", "", {}, "sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg=="],
 
     "unconfig/defu": ["defu@6.1.4", "", {}, "sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg=="],
 
