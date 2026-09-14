@@ -27,7 +27,7 @@
 		"@antfu/ni": "^30.5.0",
 		"@biomejs/biome": "^1.9.4",
 		"bumpp": "^12.3.0",
-		"lint-staged": "^17.4.1",
+		"lint-staged": "^17.5.1",
 		"publint": "^0.3.24",
 		"simple-git-hooks": "^2.14.0",
 		"tsdown": "^0.23.0",
