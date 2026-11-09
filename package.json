@@ -22,7 +22,10 @@
 		},
 		"./package.json": "./package.json"
 	},
-	"files": ["dist", "index.ts"],
+	"files": [
+		"dist",
+		"index.ts"
+	],
 	"devDependencies": {
 		"@antfu/ni": "^30.6.0",
 		"@biomejs/biome": "^2.6.6",
@@ -44,7 +47,12 @@
 		"pre-commit": "bun lint-staged"
 	},
 	"lint-staged": {
-		"*": ["bun format --no-errors-on-unmatched"]
+		"*": [
+			"bun format --no-errors-on-unmatched"
+		]
 	},
-	"trustedDependencies": ["@biomejs/biome", "simple-git-hooks"]
+	"trustedDependencies": [
+		"@biomejs/biome",
+		"simple-git-hooks"
+	]
 }
